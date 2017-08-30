@@ -1,0 +1,55 @@
+body{
+  margin: 30px;
+  ul{
+    list-style-type: none;
+  }
+}
+
+.nom-logo{
+  font-weight: bolder;
+}
+
+.coordAll{
+  margin-top: 15px;
+}
+
+dt {
+  text-align: right;
+}
+
+.icone{
+  width: 100px;
+}
+
+.titles{
+  font-weight: bold;
+}
+section{
+  h1{
+    padding-bottom: 20px;
+  }
+}
+
+.experiences{
+  margin-bottom: 50px;
+  // background-color: red;
+}
+
+.skills {
+  margin-bottom: 50px;
+  // background-color: blue;
+}
+.hobbies {
+  margin-bottom: 50px;
+  // background-color: green;
+}
+.education {
+  margin-bottom: 50px;
+  // background-color: yellow;
+}
+
+
+footer{
+  height: 70px;
+  background-color: black;
+}

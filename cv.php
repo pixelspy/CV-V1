@@ -4,48 +4,50 @@
   <meta charset="utf-8">
   <title>Curriculum vitae</title>
   <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-  <link rel="stylesheet" href="screens.css">
+  <link rel="stylesheet" href="style.css">
   <link media="print" rel="stylesheet" href="print.css">
+  <script src="https://use.fontawesome.com/fa834a185b.js"></script>
+
+
 </head>
 <body>
 
   <main class="page container">
     <header class="header-body row">
       <section class="about row ">
-        <img class="photo-portrait col-xs-2" src="cvprofile.png" alt="mahana portrait">
+        <img class="photo-portrait col-xs-2" src="picmaa.png" alt="mahana portrait">
+
         <section class="text-searching col-xs-5">
           <h1 class="nom-logo">MAHANA DELACOUR</h1>
-          <h2 class="titre-nom">Développeuse Web Junior</h2>
+          <h2 class="text-primary titre-nom">Développeuse Web Junior</h2>
           <h2 class="titre-nom">Conceptrice Visuelle</h2>
-          <p>J'espère pouvoir apporter mes compétences de graphiste et scénographe aux métiers du numérique. Je suis à la recherche d'un stage et d'un contrat pro en tant que UI/UX et web designer.</p>
-          </section>
-
-          <dl class= "coordAll col-xs-5 row ">
-            <?php
-            $values = array(
-              "Adresse : " => "Paris",
-              "Tél : " => "0695441314",
-              "Email : " => "mahana.delacour@gmail.com",
-              "Blog : " => "digitruk.wordpress.com",
-              "GitHub : " => "github.com/pixelspy",
-              "Linkdln : " => "/mahana-delacour"
-            );
-            foreach ($values as $key => $value)
-            {
-              echo '<dt class="title-coord col-xs-6">' . $key . '</dt>';
-              echo '<dd class="details-coord col-xs-6">' . $value . '</dd>';
-            }?>
-          </dl>
+          <p>Je souhaite apporter mes compétences de graphiste et scénographe aux métiers du numérique. Je suis à la recherche d'un stage et d'un contrat pro en tant que UI/UX et web designer.</p>
         </section>
-      </header>
 
-      <section class="experiences row">
-        <h1>Experiences</h1>
-        <div class="iconContainer">
+        <dl class= "coordAll col-xs-5 row ">
+          <?php
+          $values = array(
+            "Adresse : " => "Paris",
+            "Tél : " => "0695441314",
+            "Email : " => "mahana.delacour@gmail.com",
+            "Blog : " => "digitruk.wordpress.com",
+            "GitHub : " => "github.com/pixelspy",
+            "Linkdln : " => "/mahana-delacour"
+          );
+          foreach ($values as $key => $value)
+          {
+            echo '<dt class="title-coord col-xs-6">' . $key . '</dt>';
+            echo '<dd class="details-coord col-xs-6">' . $value . '</dd>';
+          }?>
+        </dl>
+      </section>
+    </header>
 
-        <img class="icone" src="exp2.png" alt="icone">
-      </div>
-        <dl>
+    <section class="experiences row">
+      <h1>Experiences</h1>
+      <div class="row">
+        <img class="icone col-xs-2" src="exp2.png" alt="icone">
+        <dl class="col-xs-10 row">
           <?php
           //tableau associatif ou tableau de tableau
           $experiences = array(
@@ -87,81 +89,113 @@
             echo '<p>' . $key['description'] . '</p></div>';
           }?>
         </dl>
-      </section>
+      </div>
 
-      <section class="skills row">
-        <h1>Compétences</h1>
-        <div class="iconContainer">
-          <img class="icone" src="skills2.png" alt="icone">
-        </div>
-        <ul class="col-xs-12">
 
-<?php
-$skills = array(
- "Conception Design" => "xxxxxx",
- "Graphisme" => "xxxxx",
- "Production Vidéo" => "xxxxx",
- "HTML/CSS" => "xxxxx",
- "Javascript" => "xxx",
- "PHP" => "xxx"
-);
-foreach ($skills as $key => $value){
-  echo "<li>" . $key . " : " . $value . "</li>";
-} ?>
-        </ul>
-      </section>
+    </section>
 
-      <section class="hobbies row">
-        <h1>Loisirs</h1>
-        <img class="icone" src="" alt="icone">
-        <dl class="row">
+    <section class="skills row">
+      <h1>Compétences</h1>
+      <div class="row">
+        <img class="icone col-xs-2" src="skills2.png" alt="icone">
+        <dl class="col-xs-10 row">
+
+
+          <?php
+          $skills = array(
+            "Conception Design" => '
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>',
+            "Graphisme" => '
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>',
+            "Production Vidéo" => '
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>',
+            "HTML / CSS" => '
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>',
+            "Javascript" => '
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>',
+            "PHP / MySql" => '
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>
+            <i class="fa fa-circle-thin" aria-hidden="true"></i>'
+          );
+          foreach ($skills as $key => $value){
+            echo '<dt class="col-xs-3">' . $key . ': </dt>' ;
+            echo '<dd class="col-xs-9">' . $value . '</dd>';
+          } ?>
+        </dl>
+      </div>
+    </section>
+
+    <section class="hobbies row">
+      <h1>Loisirs</h1>
+      <div class="row">
+        <img class="icone col-xs-2" src="hobb.png" alt="icone">
+        <dl class="contentHobb col-xs-10 row">
           <?php
           $hobbies = array(
             array(
-              'hobbie' => 'Internet',
+              'hobbie' => '<i class="fa fa-desktop" aria-hidden="true"></i>    Internet',
               'detailsHobb' => 'Blog de veille: digitruk.wordpress.com. <br>
               Sujets d\'intéret: <br>
               astuces de programmation, <br>
               évènements culturels /art numérique.'
             ),
             array(
-              'hobbie' => 'Photographie',
+              'hobbie' => '<i class="fa fa-camera" aria-hidden="true"></i>    Photographie',
               'detailsHobb' => 'Canon D4 <br>
               Objectifs: <br>Zoom 14-24mm, Zoom 70-300mm, <br>Nikkor 105mm, Nikkor 24mm.'
-            )
-          );
-          foreach ($hobbies as $key){
-            echo '<dt class="col-xs-2">' . $key['hobbie'] . '</dt>';
-            echo '<dd class="col-xs-4">' . $key['detailsHobb'] . '</dd>';
-          }?>
-
-          </dl>
-
-        <dl class="row">
-          <?php
-          $hobbies2 = array(
+            ),
             array(
-              'hobbie' => 'Animation',
+              'hobbie' => '<i class="fa fa-pencil" aria-hidden="true"></i>     Animation',
               'detailsHobb' => 'Suite Adobe: Photoshop, Illustrator, InDesign, After Effect - technique 2D et rotoscopie'
             ),
             array(
-              'hobbie' => 'Sérigraphie',
+              'hobbie' => '<i class="fa fa-book" aria-hidden="true"></i>       Sérigraphie',
               'detailsHobb' => 'Impression sur papier et tissus.<br> Atelier partagé, Mairie de Paris'
             )
-          );
-          foreach ($hobbies2 as $key){
+          );?>
+
+          <?php
+          foreach ($hobbies as $key){
             echo '<dt class="col-xs-2">' . $key['hobbie'] . '</dt>';
             echo '<dd class="col-xs-4">' . $key['detailsHobb'] . '</dd>';
+
           }
+
           ?>
 
         </dl>
-      </section>
+      </div>
 
-      <section class="education row">
-        <h1>Formations</h1>
-        <img class="icone" src="" alt="icone">
-        <dl>
+    </section>
+
+    <section class="education row">
+      <h1>Formations</h1>
+      <div class="row">
+        <img class="icone col-xs-2" src="educ1.png" alt="icone">
+        <dl class="col-xs-10 row">
           <?php
           $education = array(
             array(
@@ -180,10 +214,12 @@ foreach ($skills as $key => $value){
             echo '<div  class="col-xs-10"><dd class="titles">' . $key['titleEd'] . '</dd><p>' . $key['detailEd'] . '</p></div>';
           } ?>
         </dl>
-      </section>
+      </div>
 
-      <footer>
-      </footer>
-    </main>
-  </body>
-  </html>
+    </section>
+
+    <footer>
+    </footer>
+  </main>
+</body>
+</html>

@@ -1,0 +1,60 @@
+/*
+.row {
+    margin-bottom: 15px;
+
+}
+
+.row [class^="col-"] {
+    padding-top: 10px;
+    padding-bottom: 10px;
+    background-color: #eee;
+    border: 1px solid #ddd;
+    background-color: rgba(86,61,124,.15);
+    border: 1px solid rgba(86,61,124,.2);
+}*/
+
+/*Permet de visualiser la grille Bootstrap!*/
+
+
+body {
+  margin: 30px; }
+  body ul {
+    list-style-type: none; }
+
+.nom-logo {
+  font-weight: bolder; }
+
+.coordAll {
+  margin-top: 15px; }
+
+dt {
+  text-align: right; }
+
+.icone {
+  width: 100px; }
+
+.titles {
+  font-weight: bold; }
+
+section h1 {
+  padding-bottom: 20px; }
+
+.experiences {
+  margin-bottom: 50px; }
+
+.skills {
+  margin-bottom: 50px; }
+
+.hobbies {
+  margin-bottom: 50px; }
+.contentHobb{
+margin-bottom: 20px;
+}
+.education {
+  margin-bottom: 50px; }
+
+footer {
+  height: 70px;
+  background-color: black; }
+
+/*# sourceMappingURL=style.css.map */
